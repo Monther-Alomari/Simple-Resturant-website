@@ -1,0 +1,296 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: sans-serif;
+  }
+  /* navbar section */
+  #nav-bar {
+    position: sticky;
+    top: 10;
+    z-index: 10;
+  }
+  
+  .navbar {
+    background-image: linear-gradient(to right, #52185b, #7c3e9b);
+    padding-top: 0 !important;
+  }
+  
+  .navbar-brand img {
+    height: 40px;
+    padding-left: 20px;
+  }
+  
+  .navbar-nav li {
+    position: relative; /* Required for the pseudo-element positioning */
+    padding: 0 10px;
+  }
+  
+  .navbar-nav li a {
+    color: #fff !important;
+    font-weight: 600;
+    text-align: left;
+    position: relative; /* Required for the pseudo-element positioning */
+    display: inline-block;
+    overflow: hidden; /* Ensure the pseudo-element doesn't affect layout */
+    z-index: 1;
+  }
+  
+  .navbar-nav li a::before {
+    content: '';
+    width: 100%;
+    height: 0;
+    background: #d8daf3;
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    bottom: -5px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    transition: height 0.5s ease-in-out; /* Smooth height transition */
+  }
+  
+  .navbar-nav li a:hover::before {
+    height: 85%; /* Adjust as needed for the desired hover effect */
+  }
+  
+  .fa-bars {
+    color: #fff;
+    font-size: 30px !important;
+  }
+  
+  .navbar-toggler {
+    outline: none;
+  }
+
+
+  /* greeting section */
+
+  #greeting {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px 0;
+    color: #52185b; /* Matches the banner gradient */
+  }  
+
+  /* banner section */
+  
+  #banner {
+    background-image: linear-gradient(to right, #52185b, #7c3e9b);
+    color: #fff;
+    padding-top: 5%;
+}
+
+.promo-title {
+    font-size: 40px;
+    font-weight: 600;
+    padding-top: 100px;
+}
+
+.play-btn {
+    width: 40px;
+    margin: 20px;
+}
+
+#banner a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.bottom-img {
+    width: 100%;
+}
+
+/* Add this to style the rst1.jpg image */
+.rst-image {
+    height: 500px !important;  /* Set the desired height */
+    object-fit: cover; /* Ensures the image scales without distortion */
+    border-radius: 50px;
+}
+
+  
+  /* social media section */
+
+
+
+#social-media {
+  background: #f8f9fa;
+  padding: 100px 0;
+  border-radius: 50px;
+}
+
+#social-media p {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.social-icons img {
+  width: 60px;
+  transition: 0.5s;
+}
+
+.social-icons a:hover img {
+  transform: translateY(-10px);
+}
+/* footer section */
+#footer {
+  background-image: linear-gradient(to right, #52185b, #7c3e9b);
+  color: #fff;
+}
+
+.footer-img {
+  width: 100%;
+}
+
+.footer-box {
+  padding: 20px;
+}
+
+.footer-box img {
+  width: 120px;
+  margin-bottom: 20px;
+}
+
+.footer-box .fa {
+  margin-right: 8px;
+  font-size: 25px;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  padding-top: 7px;
+  border-radius: 2px;
+  background-image: linear-gradient(to right, #52185b, #7c3e9b);
+}
+.footer-box .form-control{
+  box-shadow: none !important;
+  border-radius: 0;
+  border: 0;
+  margin-top: 25px;
+  max-width: 250px;
+}
+.footer-box .btn-primary{
+  box-shadow: none !important;
+  border-radius: 0;
+  border: 0;
+  margin-top: 30px;
+  background-image: linear-gradient(to right, #52185b, #7c3e9b);
+}
+hr{
+  background-color: #fff;
+}
+.copy-write{
+  margin-bottom: 0;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+/* caruasul swction */
+
+
+.custom-carousel {
+  max-width: 500px; 
+  max-height: 400px; 
+  margin: auto; 
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+
+.custom-slide-image {
+  padding-bottom: 100px;
+  height: 400px; 
+  width: 100%; 
+  border-radius: 50px;
+
+}
+/* ----------------------------Menu Page---------------------------- */
+
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 0.9rem;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1); 
+}
+.menu-title{
+  color: #52185b;
+}
+.btn-primary{
+  background-image:linear-gradient(to right, #52185b, #7c3e9b); ;
+}
+.meal-price{
+  color: #7c3e9b;
+}
+.meal-price:hover {
+  font-size: 1.5em;
+  transition: font-size 0.3s ease;
+}
+
+
+
+ /* form section */ 
+ 
+ /* Wrapper for centering the form */
+ .form-wrapper {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.form-container {
+  background: linear-gradient(to right, #52185b, #7c3e9b);
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  max-width: 500px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mb-3 {
+  margin-bottom: 1rem;
+}
+
+.error {
+  font-size: 0.875em;
+  color: red;
+}
+
+.success {
+  border-color: green;
+}
+
+.text-success {
+  font-size: 1em;
+  color: green;
+}
+.error .invalid-feedback {
+  display: block; /* Make sure the error message is displayed */
+  color: red; /* Style it to look like an error */
+}
+
+.success .invalid-feedback {
+  display: none; /* Hide error messages when the input is valid */
+}

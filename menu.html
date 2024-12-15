@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"></script>
+</head>
+<body>
+     <!-- header section -->
+     <header>
+        <section>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"><img src="images/3.png" alt=""></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa fa-bars" aria-hidden="true"></i>
+
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="menu.html">Menu</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </section>
+    </header>
+    <!-- meal section -->
+    <section id="meal-carousel" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-4 menu-title">Our Featured Meals</h2>
+        <div id="mealCarousel" class="carousel slide" data-bs-ride="carousel">
+          <!-- Carousel Indicators -->
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#mealCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#mealCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#mealCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          
+          <!-- Carousel Items -->
+          <div class="carousel-inner">
+            <!-- First Slide -->
+            <div class="carousel-item active">
+              <div class="card mx-auto" style="width: 18rem;">
+                <img src="images/food-images/1.jpg" class="card-img-top meal-image" alt="Meal 1">
+                <div class="card-body text-center">
+                  <h5 class="card-title">Cake</h5>
+                  <p class="card-text">Cake with fresh vegetables.</p>
+                  <p class="fw-bold meal-price">$15.99</p>
+                  <a href="#" class="btn btn-primary meal-action">Buy Now</a>
+                  <a href="#" class="btn btn-outline-secondary meal-action">Choose Meal</a>
+                </div>
+              </div>
+            </div>
+    
+            <!-- Second Slide -->
+            <div class="carousel-item">
+              <div class="card mx-auto" style="width: 18rem;">
+                <img src="images/food-images/2.jpg" class="card-img-top meal-image" alt="Meal 2">
+                <div class="card-body text-center">
+                  <h5 class="card-title">Blueberry cake</h5>
+                  <p class="card-text">Delicious cake with a blend of fresh vegetables.</p>
+                  <p class="fw-bold meal-price">$12.99</p>
+                  <a href="#" class="btn btn-primary meal-action">Buy Now</a>
+                  <a href="#" class="btn btn-outline-secondary meal-action">Choose Meal</a>
+                </div>
+              </div>
+            </div>
+    
+            <!-- Third Slide -->
+            <div class="carousel-item">
+              <div class="card mx-auto" style="width: 18rem;">
+                <img src="images/food-images/3.jpg" class="card-img-top meal-image" alt="Meal 3">
+                <div class="card-body text-center">
+                  <h5 class="card-title">juice</h5>
+                  <p class="card-text">fresh juice with ice cream.</p>
+                  <p class="fw-bold meal-price">$10.99</p>
+                  <a href="#" class="btn btn-primary meal-action">Buy Now</a>
+                  <a href="#" class="btn btn-outline-secondary meal-action">Choose Meal</a>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Carousel Controls -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#mealCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#mealCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+     <!-- social media section -->
+
+     <section id="social-media">
+        <div class="container text-center">
+          <p>FIND US ON SOCIAL MEDIA</p>
+          <div class="social-icons">
+            <a href="#"><img src="images/facebook-icon.png" alt=""></a>
+            <a href="#"><img src="images/instagram-icon.png" alt=""></a>
+            <a href="#"><img src="images/twitter-icon.png" alt=""></a>
+            <a href="#"><img src="images/whatsapp-icon.png" alt=""></a>
+            <a href="#"><img src="images/linkedin-icon.png" alt=""></a>
+            <a href="#"><img src="images/snapchat-icon.png" alt=""></a>
+          </div>
+        </div>
+      </section>
+  
+      <!-- footer section  -->
+  
+      <section id="footer">
+        <img src="images/wave2.png" alt="" class="footer-img">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 footer-box">
+              <img src="images/3.png" alt="">
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex laboriosam consectetur in tempora accusamus
+                debitis cum quisquam est consequatur beatae dolorem architecto maiores suscipit, possimus exercitationem
+                (press the icon to get notifications)</p>
+            </div>
+            <div class="col-md-4 footer-box">
+              <p><b>CONTACT US</b></p>
+              <p><i class="fa fa-map-marker"></i>
+                Amman, University street</p>
+              <p> <i class="fa fa-phone"></i>
+                +962 797101452</p>
+              <p> <i class="fa fa-envelope"></i> montheralomari896@gmail.com</p>
+            </div>
+            <div class="col-md-4 footer-box">
+              <p><b>SUBSCRIBE</b></p>
+              <input type="email" class="form-control" placeholder="Your Email">
+              <button type="button" class="btn btn-primary">Subscribe</button>
+  
+            </div>
+          </div>
+          <hr>
+          <p class="copy-write"> Website created by Monther Alomari </p>
+        </div>
+      </section>
+      <script src="menu.js"></script>
+</body>
+</html>
