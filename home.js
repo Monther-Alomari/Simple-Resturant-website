@@ -6,25 +6,24 @@ const greetings = [
   "Serving happiness on your plate!"
 ];
 
-// Get the greeting element
+
 const greetingElement = document.getElementById("greeting");
 
-// Initialize a counter
+
 let currentGreetingIndex = 0;
 
-// Function to update the greeting text
+
 function updateGreeting() {
   greetingElement.textContent = greetings[currentGreetingIndex];
-  currentGreetingIndex = (currentGreetingIndex + 1) % greetings.length; // Loop through the array
+  currentGreetingIndex = (currentGreetingIndex + 1) % greetings.length; 
 }
 
-// Update the greeting every 4 seconds
+
 setInterval(updateGreeting, 4000);
 
-// Set the initial greeting
+
 updateGreeting();
 
-//-------------------------------------------//
 
 
 
