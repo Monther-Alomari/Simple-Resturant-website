@@ -294,3 +294,53 @@ hr{
 .success .invalid-feedback {
   display: none; /* Hide error messages when the input is valid */
 }
+/* ////////////////////// Animation for background form////////////////////// */
+
+.wave-container {
+  position: relative;
+  width: 100%;
+  min-height: 100vh; /* Ensure the section fills the viewport height */
+  background: linear-gradient(to bottom, #7c3e9b, #52185b);
+  overflow: hidden;
+  display: flex;
+  align-items: center; /* Center the form vertically */
+  justify-content: center; /* Center the form horizontally */
+}
+
+.wave {
+  position: absolute;
+  width: 200%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  top: 0;
+  left: 0;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  animation: waveAnimation 8s infinite linear;
+  z-index: 1;
+}
+
+.wave:nth-child(2) {
+  animation-delay: 4s;
+}
+
+@keyframes waveAnimation {
+  0% { transform: translateX(-50%) translateY(-25%); }
+  50% { transform: translateX(0) translateY(0); }
+  100% { transform: translateX(-50%) translateY(-25%); }
+}
+
+.form-wrapper {
+  position: relative;
+  z-index: 2; /* Ensure the form is above the waves */
+  background: rgba(255, 255, 255, 0.9); /* Slightly opaque white background for readability */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
+}
+
+.form-container h2 {
+  margin-bottom: 20px;
+}
