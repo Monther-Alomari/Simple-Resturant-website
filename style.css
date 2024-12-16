@@ -24,7 +24,7 @@
   }
   
   .navbar-nav li {
-    position: relative; /* Required for the pseudo-element positioning */
+    position: relative; 
     padding: 0 10px;
   }
   
@@ -32,9 +32,9 @@
     color: #fff !important;
     font-weight: 600;
     text-align: left;
-    position: relative; /* Required for the pseudo-element positioning */
+    position: relative; 
     display: inline-block;
-    overflow: hidden; /* Ensure the pseudo-element doesn't affect layout */
+    overflow: hidden; 
     z-index: 1;
   }
   
@@ -49,11 +49,11 @@
     bottom: -5px;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
-    transition: height 0.5s ease-in-out; /* Smooth height transition */
+    transition: height 0.5s ease-in-out; 
   }
   
   .navbar-nav li a:hover::before {
-    height: 85%; /* Adjust as needed for the desired hover effect */
+    height: 85%; 
   }
   
   .fa-bars {
@@ -73,7 +73,7 @@
     font-weight: bold;
     text-align: center;
     margin: 20px 0;
-    color: #52185b; /* Matches the banner gradient */
+    color: #52185b; 
   }  
 
   /* banner section */
@@ -104,10 +104,9 @@
     width: 100%;
 }
 
-/* Add this to style the rst1.jpg image */
 .rst-image {
-    height: 500px !important;  /* Set the desired height */
-    object-fit: cover; /* Ensures the image scales without distortion */
+    height: 500px !important;  
+    object-fit: cover; 
     border-radius: 50px;
 }
 
@@ -245,7 +244,6 @@ hr{
 
  /* form section */ 
  
- /* Wrapper for centering the form */
  .form-wrapper {
   max-width: 500px;
   margin: 50px auto;
@@ -287,24 +285,25 @@ hr{
   color: green;
 }
 .error .invalid-feedback {
-  display: block; /* Make sure the error message is displayed */
-  color: red; /* Style it to look like an error */
+  display: block; 
+  color: red; 
 }
 
 .success .invalid-feedback {
-  display: none; /* Hide error messages when the input is valid */
+  display: none; 
 }
+
 /* ////////////////////// Animation for background form////////////////////// */
 
 .wave-container {
   position: relative;
   width: 100%;
-  min-height: 100vh; /* Ensure the section fills the viewport height */
+  min-height: 100vh; 
   background: linear-gradient(to bottom, #7c3e9b, #52185b);
   overflow: hidden;
   display: flex;
-  align-items: center; /* Center the form vertically */
-  justify-content: center; /* Center the form horizontally */
+  align-items: center; 
+  justify-content: center; 
 }
 
 .wave {
@@ -332,8 +331,8 @@ hr{
 
 .form-wrapper {
   position: relative;
-  z-index: 2; /* Ensure the form is above the waves */
-  background: rgba(255, 255, 255, 0.9); /* Slightly opaque white background for readability */
+  z-index: 2; 
+  background: rgba(255, 255, 255, 0.9); 
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -343,4 +342,73 @@ hr{
 
 .form-container h2 {
   margin-bottom: 20px;
+}
+
+
+
+.wave-container {
+  position: relative;
+  width: 100%;
+  background: linear-gradient(to bottom, #7c3e9b, #52185b);
+  overflow: hidden;
+}
+
+.wave {
+  position: absolute;
+  width: 200%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  top: 0;
+  left: 0;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  animation: waveAnimation 8s infinite linear;
+}
+
+.wave:nth-child(2) {
+  animation-delay: 4s;
+}
+
+@keyframes waveAnimation {
+  0% {
+    transform: translateX(-50%) translateY(-25%);
+  }
+  50% {
+    transform: translateX(0) translateY(0);
+  }
+  100% {
+    transform: translateX(-50%) translateY(-25%);
+  }
+}
+
+#meal-carousel .container {
+  position: relative;
+  z-index: 2; 
+}
+
+.menu-title {
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.card-title,
+.card-text,
+.meal-price {
+  color: #333;
+}
+
+.meal-action {
+  margin: 5px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1);
 }
